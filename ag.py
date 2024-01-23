@@ -16,7 +16,7 @@ def res_cb(task: asyncio.Task):
 
 async def coro(val):
     print("start")
-    
+    print("HELLO")
     tasks = asyncio.gather(serve(val), serve(val + 1))
     print("end")
     await tasks
